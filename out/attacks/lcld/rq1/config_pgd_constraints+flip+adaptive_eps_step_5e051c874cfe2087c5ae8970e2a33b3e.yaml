@@ -1,0 +1,26 @@
+attack_name: pgd
+budget: 1000
+comet: false
+constraints_optim: sum
+dirs:
+  results: ./out/attacks/lcld/rq1/
+eps: 0.2
+initial_state_offset: 0
+loss_evaluation: constraints+flip+adaptive_eps_step
+misclassification_threshold: 0.25
+n_initial_state: 400
+norm: 2
+paths:
+  constraints: ./data/lcld/constraints.csv
+  features: ./data/lcld/features.csv
+  min_max_scaler: ./models/lcld/scaler.joblib
+  ml_scaler: ./models/lcld/scaler.joblib
+  model: ./models/lcld/nn.model
+  x_candidates: ./data/lcld/x_candidates_common.npy
+project_name: lcld
+reconstruction: false
+save_history: full
+seed: 42
+system:
+  n_jobs: -1
+  verbose: 1
