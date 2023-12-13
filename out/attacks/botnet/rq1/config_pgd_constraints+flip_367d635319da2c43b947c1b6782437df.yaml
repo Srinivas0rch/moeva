@@ -1,0 +1,26 @@
+attack_name: pgd
+budget: 1000
+comet: false
+constraints_optim: sum
+dirs:
+  results: ./out/attacks/botnet/rq1/
+eps: 4
+initial_state_offset: 0
+loss_evaluation: constraints+flip
+misclassification_threshold: 0.5
+n_initial_state: -1
+norm: 2
+paths:
+  constraints: ./data/botnet/constraints.csv
+  features: ./data/botnet/features.csv
+  min_max_scaler: ./models/botnet/scaler.joblib
+  ml_scaler: ./models/botnet/scaler.joblib
+  model: ./models/botnet/nn.model
+  x_candidates: ./data/botnet/x_candidates_common.npy
+project_name: botnet
+reconstruction: false
+save_history: reduced
+seed: 42
+system:
+  n_jobs: 1
+  verbose: 1
