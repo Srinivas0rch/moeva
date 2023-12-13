@@ -9,7 +9,8 @@ evaluation:
   project_name: lcld_augmented
 initial_state_offset: 0
 misclassification_threshold: 0.25
-n_initial_state: 4000
+#n_initial_state: 4000
+n_initial_state: 400
 n_offsprings: 100
 n_pop: 200
 norm: 2
