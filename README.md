@@ -22,7 +22,7 @@ This will also mount the project directory you are in, inside the docker.
 
 Then from this interactive docker, you can activate the environment (conda activate moeva2) and run the experiments (./run_all.sh)
 
-Download the additional data from https://figshare.com/s/84ae808ce6999fafd192 and place the content of the downloaded data folder in the data folder of this folder.
+Additional data has been downloaded from https://figshare.com/s/84ae808ce6999fafd192 and placed in the data folder of the original data (folder) in the package.
 
 ## File structure
 
