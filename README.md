@@ -4,13 +4,11 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2112.01156-b31b1b.svg)](https://arxiv.org/abs/2112.01156)
 
 **Important notice**: 
-The goal of this package is the replication of the experiments of the paper [A Unified Framework for Adversarial Attack and Defense in Constrained Feature Space](https://arxiv.org/abs/2112.01156). 
-
-The latest version of our framework is available at [https://github.com/serval-uni-lu/constrained-attacks](https://github.com/serval-uni-lu/constrained-attacks).
+This aims to reprodue the paper [A Unified Framework for Adversarial Attack and Defense in Constrained Feature Space](https://arxiv.org/abs/2112.01156). 
 
 ## Introduction
 
-This package contains all the necessary data and scripts to replicate the experiments of the research paper "A Unified Framework for Adversarial Attack and Defense in Constrained Feature Space".
+The package has the code and data for reproducing the research "A Unified Framework for Adversarial Attack and Defense in Constrained Feature Space".
 
 ## Create the environment
 
@@ -40,4 +38,4 @@ Download the additional data from https://figshare.com/s/84ae808ce6999fafd192 an
 
 The results are found in ./out/attacks/[project]/rq[X]/metrics_[attack_name]_[hash].json
 
-## The experiments were run with 400 dataset wherever there was 4000 and the cores were reduced from 10 to 2 at ./config/rq1.botnet.static.yaml due to system limitation(s).
+## The experiments were run with 400 generations wherever there was 4000 and the cores were reduced from 10 to 2/1 at ./config/rq1.botnet.static.yaml due to system limitation(s).
