@@ -7,15 +7,13 @@ This study aims to reprodue the experiments in the paper [A Unified Framework fo
 
 ## Introduction
 
-The package has the code and data for reproducing the research "A Unified Framework for Adversarial Attack and Defense in Constrained Feature Space".
-
 ## Create the environment
 
 From WSL2 and the in the repo directory,
 
-execute "docker build -t moeva-rep ." to build the docker.
+execute "docker build -t moeva-rep ." to build the docker using Dockerfile.
 
-Then  start the docker interactively with "docker run -it -v $(pwd):/app moeva-rep"
+Then start the docker interactively with "docker run -it -v $(pwd):/app moeva-rep"
 
 This will also mount the project directory you are in, inside the docker. 
 
@@ -25,19 +23,20 @@ Additional data has been downloaded from https://figshare.com/s/84ae808ce6999faf
 
 ## Note: Due to large size, limitation of github repository all files of the data are not available in the mentioned folder above. The additional data can be downloaded from https://figshare.com/s/84ae808ce6999fafd192
 
+## Note 1: miniconda & python3.8.8 is recommended.
+
 ## File structure
-- Dockerfile: Downloads docker container (miniconda 3) and installs the required dependencies from requirements.txt & scipy==1.4.0 thereby setting up the environment 
-              required to run the experiments.
-- config: configurations files for preparing and running the experiments
-- data: has all the data for the attacks
-- models: models which are pre-trained
-- out: contains the experimental results
-- src: modules and scripts to run the experiment(s)
-  - attacks: has the implementation of the attack modules
-  - examples: usecase based scripts
-  - botnet and lcld: contains the scripts of LCLD & CTU-13 data and models respectively
-  - united: has single script to run combined attack(s)
+- Dockerfile: Downloads docker container (miniconda 3) and installs the required dependencies from requirements.txt & scipy==1.4.0 thereby setting up the environment required to run the experiments.
+- config: configurations files for preparing and running the experiments.
+- data: has all the data for the attacks.
+- models: models which are pre-trained.
+- out: contains the experimental results.
+- src: modules and scripts to run the experiment(s).
+  - attacks: has the implementation of the attack modules.
+  - examples: usecase based scripts.
+  - botnet and lcld: contains the scripts of LCLD & CTU-13 data and models respectively.
+  - united: has single script to run combined attack(s).
 
 The results are found in ./out/attacks/[project]/rq[X]/metrics_[attack_name]_[hash].json
 
-## The experiments were run with 400 generations where there was 4000 (for LCLD) and 100 in the case of botnet (CTU-13) where there was 1000. Also, the cores were reduced from 10 to 1 at ./config/rq1.botnet.static.yaml due to system limitation(s) in the case of botnet experiment(s).
+## The experiments were run with 400 generations(budget) where there was 4000 (for LCLD) and 100 in the case of botnet (CTU-13) where there was 1000. Also, the cores were reduced from 10 to 1 at ./config/rq1.botnet.static.yaml due to system limitation(s) in the case of botnet experiment(s).
