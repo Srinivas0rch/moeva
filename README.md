@@ -38,4 +38,4 @@ Additional data has been downloaded from https://figshare.com/s/84ae808ce6999faf
 
 The results are found in ./out/attacks/[project]/rq[X]/metrics_[attack_name]_[hash].json
 
-## The experiments were run with 400 generations wherever there was 4000 and the cores were reduced from 10 to 1 at ./config/rq1.botnet.static.yaml due to system limitation(s).
+## The experiments were run with 400 generations where there was 4000 (for LCLD) and 100 in the case of botnet (CTU-13) where there was 1000. Also, the cores were reduced from 10 to 1 at ./config/rq1.botnet.static.yaml due to system limitation(s) in the case of botnet experiment(s).
