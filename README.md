@@ -38,5 +38,6 @@ Additional data has been downloaded from https://figshare.com/s/84ae808ce6999faf
   - united: has single script to run combined attack(s).
 
 The results are found in ./out/attacks/[project]/rq[X]/metrics_[attack_name]_[hash].json
+## PS: project is lcld or botnet and X = 1/2/3/4
 
 ## The experiments were run with 400 generations(budget) where there was 4000 (for LCLD) and 100 in the case of botnet (CTU-13) where there was 1000. Also, the cores were reduced from 10 to 1 at ./config/rq1.botnet.static.yaml due to system limitation(s) in the case of botnet experiment(s).
