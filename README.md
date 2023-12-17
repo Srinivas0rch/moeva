@@ -24,7 +24,8 @@ Then from this interactive docker, you can activate the environment (conda activ
 Additional data has been downloaded from https://figshare.com/s/84ae808ce6999fafd192 and placed in the data folder of the original data (folder) in the package.
 
 ## File structure
-
+- Dockerfile: Downloads docker container (miniconda 3) and installs the required dependencies from requirements.txt & scipy==1.4.0 thereby setting up the environment 
+              required to run the experiments.
 - config: configurations files for preparing and running the experiments
 - data: has all the data for the attacks
 - models: models which are pre-trained
