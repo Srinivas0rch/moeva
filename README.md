@@ -3,8 +3,7 @@
 <!-- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # [![arXiv](https://img.shields.io/badge/arXiv-2112.01156-b31b1b.svg)](https://arxiv.org/abs/2112.01156) -->
 
-**Important notice**: 
-This aims to reprodue the paper [A Unified Framework for Adversarial Attack and Defense in Constrained Feature Space](https://arxiv.org/abs/2112.01156). 
+This study aims to reprodue the experiments in the paper [A Unified Framework for Adversarial Attack and Defense in Constrained Feature Space](https://arxiv.org/abs/2112.01156). 
 
 ## Introduction
 
@@ -26,15 +25,15 @@ Additional data has been downloaded from https://figshare.com/s/84ae808ce6999faf
 
 ## File structure
 
-- config: configurations files used to prepare and run the experiments
-- data: the source data used to craft the attacks
-- models: pre-trained models
-- out: results of the experiments
-- src: scripts and modules to run the attacks
-  - attacks: module containing the implementations of the attacks
-  - examples: usecase-specific scripts
-  - botnet and lcld: scripts to prepare data and models for the experiments for CTU-13 and LCLD respectively
-  - united: scripts to run a single attack
+- config: configurations files for preparing and running the experiments
+- data: has all the data for the attacks
+- models: models which are pre-trained
+- out: contains the experimental results
+- src: modules and scripts to run the experiment(s)
+  - attacks: has the implementation of the attack modules
+  - examples: usecase based scripts
+  - botnet and lcld: contains the scripts of LCLD & CTU-13 data and models respectively
+  - united: has single script to run combined attack(s)
 
 The results are found in ./out/attacks/[project]/rq[X]/metrics_[attack_name]_[hash].json
 
