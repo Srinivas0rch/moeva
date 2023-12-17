@@ -10,7 +10,8 @@ dirs:
   results: ./out/attacks/lcld/rq3/
 misclassification_threshold: 0.25
 norm: 2
-n_initial_state: 4000
+#n_initial_state: 4000
+n_initial_state: 400
 initial_state_offset: 0
 system:
   n_jobs: -1
